@@ -8,12 +8,14 @@ int main() {
     double fee = 0.0;
     cout << "Enter a beginning balance and the number of checks written: " << endl;
     cin >> balance >> checks;
-    if (checks<0) {
-        return 0;
-    }
     if (balance<0) {
         cout << "ACCOUNT OVERDRAWN!" << endl;
         return 0;
+    }
+    while (checks<0) {
+        cout << "\nERROR! Number of checks must be nonnegative! Please try again." << endl;
+        cout << "\nEnter number of checks written: ";
+        cin >> checks;        
     }
     if (balance<400) {
         fee+=15;
@@ -32,5 +34,4 @@ int main() {
     }
     cout << setprecision(2) << fixed;
     cout << "The service fees for this month are: $" << fee << endl;
-
 }

@@ -12,5 +12,4 @@ int main() {
     else {
         cout << "The date is not magic" << endl;
     }
-
 }

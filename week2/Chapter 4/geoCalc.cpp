@@ -17,6 +17,11 @@ int main() {
             double radius;
             cout << "\nEnter the radius: ";
             cin >> radius;
+            while (radius<0) {
+                cout << "\nERROR! Radius must be positive! Please try again." << endl;
+                cout << "\nEnter the radius: ";
+                cin >> radius;
+            } 
             cout << setprecision(4) << fixed;
             cout << "\nArea of Circle: " << radius*radius*PI << endl;
             break;
@@ -25,6 +30,11 @@ int main() {
             double length, width;
             cout << "\nEnter a length and width: ";
             cin >> length >> width;
+            while (length<0 || width<0) {
+                cout << "\nERROR! Dimensions must be positive! Please try again." << endl;
+                cout << "\nEnter a length and width: ";
+                cin >> length >> width;
+            } 
             cout << setprecision(4) << fixed;
             cout << "\nArea of Rectangle: " << length*width << endl;
             break;
@@ -33,6 +43,11 @@ int main() {
             double base, height;
             cout << "\nEnter a base and height: ";
             cin >> base >> height;
+            while (base<0 || height<0) {
+                cout << "\nERROR! Dimensions must be positive! Please try again." << endl;
+                cout << "\nEnter a base and height: ";
+                cin >> base >> height;
+            } 
             cout << setprecision(4) << fixed;
             cout << "\nArea of Rectangle: " << base*height*0.5 << endl;
             break;
