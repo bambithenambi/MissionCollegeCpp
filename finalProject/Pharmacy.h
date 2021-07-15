@@ -1,5 +1,3 @@
-#include "PatientAccount.h"
- 
 class Pharmacy {
     private:
         //medicine Prices
@@ -12,11 +10,11 @@ class Pharmacy {
         //Default constructor
         //Sets prices for the 5 types of medicine
         Pharmacy() {        
-            med1 = 10.00;   
-            med2 = 20.00;
-            med3 = 30.00;
-            med4 = 40.00;
-            med5 = 100.00;
+            med1 = 10.89;   
+            med2 = 20.49;
+            med3 = 30.23;
+            med4 = 40.28;
+            med5 = 100.01;
         }
 
         /*

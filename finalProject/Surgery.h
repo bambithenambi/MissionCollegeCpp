@@ -1,5 +1,3 @@
-#include "PatientAccount.h"
-
 class Surgery {
     private:
         //rates for each type of surgery
@@ -12,11 +10,11 @@ class Surgery {
         //Default constructor
         //Sets rates for the 5 types of surgery
         Surgery() {
-            surgery1 = 1100.00; 
-            surgery2 = 2300.00;
-            surgery3 = 3500.00;
-            surgery4 = 4700.00;
-            surgery5 = 9500.00;
+            surgery1 = 11000.00; 
+            surgery2 = 23000.00;
+            surgery3 = 35000.00;
+            surgery4 = 47000.00;
+            surgery5 = 95000.00;
         }
 
         /*

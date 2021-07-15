@@ -16,7 +16,7 @@ class PatientAccount
         
         //Get number of days in the hospital
         void setDays() { 
-            cout << "How many days was the patient in the hospital? "; cin >> days;
+            cout << "\nHow many days was the patient in the hospital? "; cin >> days;
             //validation
             while (days < 0)
             {  
